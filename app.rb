@@ -8,6 +8,12 @@ get '/about' do
     erb :about
 end
 
+post '/confrim' do
+    @email = params[:email]
+    @message = params[:message]
+    erb :confirm
+end
+
 get '/bye' do
     "Good bye"
 end
